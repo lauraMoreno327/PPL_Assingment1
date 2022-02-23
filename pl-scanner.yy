@@ -164,7 +164,7 @@ PERIOD [.]
            return T_ID;
          }
 
-(""|{ADD}|{SUBT}){DIGIT}+{PERIOD}{DIGIT}+  {
+({ADD}|{SUBT})*{DIGIT}+{PERIOD}{DIGIT}+  {
 		return L_FLOAT;
 	}
 
